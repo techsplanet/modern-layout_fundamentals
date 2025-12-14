@@ -1,4 +1,5 @@
 import BasicGrid from "./components/BasicGrid"
+import FixedSizeItems from "./components/FixedSizeItems"
 import Subgrid from "./components/Subgrid"
 
 const page = () => {
@@ -6,6 +7,7 @@ const page = () => {
     <>
     <BasicGrid />
     <Subgrid />
+    <FixedSizeItems />
     </>
   )
 }

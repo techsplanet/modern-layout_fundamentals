@@ -55,6 +55,6 @@ section {
   }
 
   & #subgrid-item{
-    @apply bg-green-300/70 col-start-2 row-start-2 col-span-3 row-span-3 grid grid-cols-subgrid grid-rows-subgrid gap-1 p-1;
+    @apply bg-green-300/70 col-start-2 row-start-2 col-span-3 row-span-3 grid grid-cols-subgrid grid-rows-subgrid gap-1 p-1 border-2 border-black rounded-md;
   }
 }
