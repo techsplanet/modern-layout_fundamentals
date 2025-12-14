@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+
+body{
+  @apply flex flex-col even:bg-sky-200 odd:bg-amber-200;
+}
+.show-container {
+  @apply absolute top-1/2 left-1/2 -translate-1/2 w-1/2 h-1/2 border-4 border-zinc-900 rounded-lg [font-size:_clamp(0.5rem,_2vw,_3rem)];
+}
+
+#parent {
+  @apply grid grid-cols-6 grid-rows-6 gap-1 p-1;
+}
+
+#parent > div {
+  @apply p-1 uppercase font-bold text-center rounded-md;
+}
+
+.item-1 {
+  @apply bg-rose-500 col-start-3 row-start-2 col-span-4 row-span-4;
+}
+
+.item-2 {
+  @apply bg-sky-400 col-start-1 row-start-6 col-span-6;
+}
+
+.item-3 {
+  @apply bg-lime-400 col-start-1 row-start-1 col-span-6;
+}
+
+.item-4 {
+  @apply bg-amber-300 col-start-1 row-start-2 col-span-2 row-span-4;
+}

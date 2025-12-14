@@ -1,8 +1,8 @@
-import React from 'react'
+import BasicGrid from "./components/BasicGrid"
 
 const page = () => {
   return (
-    <div>page</div>
+    <BasicGrid />
   )
 }
 
