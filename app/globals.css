@@ -1,11 +1,23 @@
 @import "tailwindcss";
 
+body {
+  & > *:nth-child(even) {
+    @apply bg-rose-200;
+  }
+  & > *:nth-child(odd) {
+    @apply bg-sky-200;
+  }
+}
 
-body{
-  @apply flex flex-col even:bg-sky-200 odd:bg-amber-200;
+section {
+  @apply w-full h-dvh relative;
+
+  & > h1 {
+    @apply [font-size:_clamp(1.3rem,_3vw,_5rem)] p-4 underline uppercase font-bold;
+  }
 }
 .show-container {
-  @apply absolute top-1/2 left-1/2 -translate-1/2 w-1/2 h-1/2 border-4 border-zinc-900 rounded-lg [font-size:_clamp(0.5rem,_2vw,_3rem)];
+  @apply absolute top-1/2 left-1/2 -translate-1/2 w-1/2 h-1/2 border-4 border-dashed border-zinc-900 rounded-lg [font-size:_clamp(0.5rem,_2vw,_3rem)];
 }
 
 #parent {
@@ -30,4 +42,19 @@ body{
 
 .item-4 {
   @apply bg-amber-300 col-start-1 row-start-2 col-span-2 row-span-4;
+}
+
+.grid-board {
+  @apply grid grid-cols-5 grid-rows-5 gap-1 p-1;
+
+  & > *:nth-child(even) {
+    @apply bg-gray-200;
+  }
+  & > *:nth-child(odd) {
+    @apply bg-black;
+  }
+
+  & #subgrid-item{
+    @apply bg-green-300/70 col-start-2 row-start-2 col-span-3 row-span-3 grid grid-cols-subgrid grid-rows-subgrid gap-1 p-1;
+  }
 }

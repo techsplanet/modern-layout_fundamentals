@@ -2,7 +2,9 @@ import React from 'react'
 
 const BasicGrid = () => {
   return (
-    <div className='show-container' id='parent'>
+    <section>
+        <h1>Implemented Basic Grid</h1>
+        <div className='show-container' id='parent'>
       <div className="item-2">
         <h1>footer</h1>
       </div>
@@ -16,6 +18,8 @@ const BasicGrid = () => {
         <h1>main</h1>
       </div>
     </div>
+
+    </section>
   )
 }
 
